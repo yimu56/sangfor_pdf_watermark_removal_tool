@@ -1,0 +1,30 @@
+# ---- 构建产物（勿提交；请用 build.bat 自行构建，或从 Releases 下载）----
+*.exe
+*.dll
+build/
+dist/
+out/
+
+# ---- 运行期生成物（可能含本地路径/口令）----
+*.bak
+*.log
+*.log.*
+config.json
+token.cache
+*.pem
+*.key
+
+# ---- 编辑器 / IDE ----
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- 系统垃圾 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Go ----
+# 注意：故意不忽略 *.syso —— rsrc_windows_amd64.syso 是 GUI 清单+图标资源，
+# 缺少它编译出的 exe 界面会启动失败（TTM_ADDTOOL failed）。

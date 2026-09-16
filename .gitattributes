@@ -1,0 +1,16 @@
+# 统一换行，防止 Windows/Linux 克隆差异
+* text=auto eol=lf
+
+# 批处理必须 CRLF，否则 Windows 下可能无法执行
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 脚本 / 源码保持 LF
+*.sh  text eol=lf
+*.go  text eol=lf
+
+# 二进制
+*.png binary
+*.ico binary
+*.syso binary
+*.exe binary
